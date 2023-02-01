@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="product">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/logo.png" alt="logo" width="250px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="assets/icon.png" alt="" width="30px" height="30px" />
+        <img
+          src="assets/menu-icon.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <main>
+      <div class="grid2">
+        <div>
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/1000/1548.webp"
+            alt="Cell Exsis Sneaker"
+            class="img"
+          />
+        </div>
+        <div>
+          <section class="purchaseBox">
+            <h3>Cell Exsis Sneaker</h3>
+            <p>Puma | Shoes</p>
+            <form>
+              <label
+                >Choose a size
+                <select name="size">
+                  <option>38</option>
+                  <option>39</option>
+                  <option>40</option>
+                  <option>41</option>
+                </select>
+              </label>
+              <button>Add to basket</button>
+            </form>
+          </section>
+          <section class="info">
+            <h2>Product Information</h2>
+            <dl>
+              <dt>Model name</dt>
+              <dd>Sports Shoes</dd>
+              <dt>Color</dt>
+              <dd>multi</dd>
+              <dt>Inventory number</dt>
+              <dd>1548</dd>
+            </dl>
+            <h1>Puma</h1>
+            <p>Cell Exsis Sneaker</p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col1">
+                <h3>Download our app</h3>
+                <p>Download our app for Apple or Android</p>
+                <div class="app-logo">
+                  <img src="assets/appicon.svg" alt="" />
+                  <img src="assets/ggicon.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="footer-col2">
+                <img src="assets/logo.png" alt="logo" />
+                <p>Our purpose is sustainability and get you a one of a kind</p>
+              </div>
+              <div class="footer-col3">
+                <h3>Useful links</h3>
+                <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join affiliate</li>
+                </ul>
+              </div>
+              <div class="footer-col4">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+                  <li>TikTok</li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <p>Copyright 2023 - Ellen Pelby Bitterhoff</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
