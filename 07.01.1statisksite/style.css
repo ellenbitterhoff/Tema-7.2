@@ -30,8 +30,8 @@ p {
 .container {
   max-width: 1300px;
   margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .logo {
   align-items: center;
@@ -57,7 +57,7 @@ p {
 }
 .btn {
   display: inline-block;
-  background: #ad774b;
+  background: #ad896c;
   color: white;
   padding: 8px 30px;
   margin: 30px 0;
@@ -149,6 +149,24 @@ ul {
   margin-left: 20px;
   display: none;
 }
+.boks {
+  display: inline-block;
+  background: #ad896c;
+  color: white;
+  padding: 50px 10px;
+  margin: 30px 0;
+  border-radius: 50px;
+  transition: background 0.5s;
+  font-size: 20px;
+}
+.copy {
+  text-align: center;
+}
+.product {
+  margin-left: 80px;
+  font-size: 50px;
+  margin-top: 20px;
+}
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
@@ -172,6 +190,10 @@ ul {
     display: block;
     cursor: pointer;
   }
+  .categorylist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (max-width: 600px) {
   .row {
@@ -185,4 +207,12 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .categorylist {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+dt {
+  font-weight: bold;
+  margin-top: 20px;
 }
