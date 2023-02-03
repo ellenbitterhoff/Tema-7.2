@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Productlist</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="assets/logo.png" alt="logo" width="250px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="assets/icon.png" alt="" width="30px" height="30px" />
+        <img
+          src="assets/menu-icon.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <main>
+      <h1 class="product">SHOES</h1>
+      <a href="categories.html" class="product">BACK</a>
+      <div class="grid_1">
+        <div>
+          <article class="smallProduct">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1548.webp"
+              alt="Sahara Team India Fanwear Round Neck Jersey"
+              class="img"
+            />
+            <h3>Cell Exsis Sneaker</h3>
+            <p class="subtle">Shoes | Puma</p>
+            <p class="price">DKK 1595,-</p>
+
+            <a href="products.html" class="btn">BUY</a>
+          </article>
+        </div>
+        <div>
+          <article class="smallProduct onSale">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1549.webp"
+              alt="Blue T20"
+              class="img"
+            />
+            <h3>Jiyu Slip On Sneaker</h3>
+            <p class="subtle">Shoes | Puma</p>
+            <p class="price"><span>Prev.</span> DKK 1595,-</p>
+            <div class="discounted">
+              <p>Now DKK 1560,-</p>
+              <p>-34%</p>
+            </div>
+
+            <a href="products.html" class="btn">BUY</a>
+          </article>
+        </div>
+        <div>
+          <article class="smallProduct soldOut">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1543.webp"
+              alt="F300 Football Shoe"
+              class="img"
+            />
+            <h3>Basket-Biz Sneaker</h3>
+            <p class="subtle">Shoes | Puma</p>
+            <p></p>
+            <a href="products.html" class="btn">SOLD OUT</a>
+          </article>
+        </div>
+        <div>
+          <article class="smallProduct soldOut onSale">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1544.webp"
+              alt="Basket Bump Sneaker"
+              class="img"
+            />
+            <h3>Basket Bump Sneaker</h3>
+            <p class="subtle">Shoes | Puma</p>
+            <p class="price">DKK 1595,-</p>
+            <span></span>
+            <a href="products.html" class="btn">BUY</a>
+          </article>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col1">
+                <h3>Download our app</h3>
+                <p>Download our app for Apple or Android</p>
+                <div class="app-logo">
+                  <img src="assets/appicon.svg" alt="" />
+                  <img src="assets/ggicon.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="footer-col2">
+                <img src="assets/logo.png" alt="logo" />
+                <p>Our purpose is sustainability and get you a one of a kind</p>
+              </div>
+              <div class="footer-col3">
+                <h3>Useful links</h3>
+                <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join affiliate</li>
+                </ul>
+              </div>
+              <div class="footer-col4">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+                  <li>TikTok</li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <p class="copy">Copyright 2023 - Ellen Pelby Bitterhoff</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

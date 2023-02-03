@@ -1,0 +1,20 @@
+[
+  {
+    "navn": "Justin Bieber",
+    "alder": "28",
+    "land": "Canada",
+    "genre": "Pop"
+  },
+  {
+    "navn": "SZA",
+    "alder": "33",
+    "land": "USA",
+    "genre": "R&B"
+  },
+  {
+    "navn": "Bryson Tiller",
+    "alder": "30",
+    "land": "USA",
+    "genre": ["R&B", "Rap"]
+  }
+]
