@@ -178,6 +178,33 @@ ul {
 .soldOut img {
   opacity: 0.3;
 }
+.grid_1 article.soldOut img {
+  opacity: 0.5;
+}
+.grid_1 article {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  padding: 5px;
+}
+.grid_1 img {
+  width: 100%;
+}
+.subtle {
+  color: gray;
+}
+.percent {
+  background-color: #555;
+  color: white;
+  padding: 0.2rem;
+}
+.grid_1 article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+.grid_1 article .discounted {
+  display: none;
+}
 
 @media only screen and (max-width: 800px) {
   nav ul {

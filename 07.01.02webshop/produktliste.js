@@ -22,26 +22,27 @@ hentData();
 function visProdukt(produkt) {
   console.log(produkt);
   const template = document.querySelector("#smallProductTemplate").content;
+  const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`;
   console.log(template);
   const copy = template.cloneNode(true);
   copy.querySelector("h3").textContent = produkt.productdisplayname;
-  copy.querySelector(".category").textContent = produkt.category;
-  copy.querySelector(".price").textContent = produkt.price;
-  copy.querySelector(".type").textContent = produkt.brandname;
+  copy.querySelector(".subtle").textContent = produkt.category;
+  copy.querySelector(".brand").textContent = produkt.brand;
+  copy.querySelector(".img").src = imagePath;
+  copy.querySelector(".price span").textContent = produkt.price;
+  copy.querySelector(".percent span").textContent = produkt.discount;
 
   copy.querySelector("a").href = "products.html?id=" + produkt.id;
-  copy.querySelector(
-    ".img"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${produkt.id}.webp`;
 
   if (produkt.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (produkt.discount) {
     copy.querySelector("article").classList.add("onSale");
+    copy.querySelector(".price").style.textDecoration = "line-through";
     const discountPrice =
       produkt.price - produkt.price * (produkt.discount / 100);
-    copy.querySelector(".newprice").textContent = discountPrice;
+    copy.querySelector(".newprice span").textContent = discountPrice.toFixed(2);
   }
   document.querySelector(".grid_1").appendChild(copy);
 }
