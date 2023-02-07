@@ -233,6 +233,11 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .grid2,
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (max-width: 600px) {
   .row {
