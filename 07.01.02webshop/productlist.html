@@ -36,20 +36,24 @@
       <h1 class="product">SHOES</h1>
       <a href="categories.html" class="product">BACK</a>
       <div class="grid_1">
-        <div>
-          <article class="smallProduct">
-            <img
-              src="https://kea-alt-del.dk/t7/images/webp/640/1548.webp"
-              alt="Sahara Team India Fanwear Round Neck Jersey"
-              class="img"
-            />
-            <h3>Cell Exsis Sneaker</h3>
-            <p class="subtle">Shoes | Puma</p>
-            <p class="price">DKK 1595,-</p>
+        <template id="smallProductTemplate">
+          <div>
+            <article class="smallProduct">
+              <img
+                src="https://kea-alt-del.dk/t7/images/webp/640/1548.webp"
+                alt="Sahara Team India Fanwear Round Neck Jersey"
+                class="img"
+              />
+              <h3>Cell Exsis Sneaker</h3>
+              <p class="subtle">Shoes | Puma</p>
+              <p class="price">DKK 1595,-</p>
 
-            <a href="products.html" class="btn">BUY</a>
-          </article>
-        </div>
+              <a href="products.html" class="btn">BUY</a>
+            </article>
+          </div>
+        </template>
+      </div>
+      <div class="grid_1">
         <div>
           <article class="smallProduct onSale">
             <img
@@ -96,58 +100,49 @@
           </article>
         </div>
       </div>
-      <footer>
-        <div class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="footer-col1">
-                <h3>Download our app</h3>
-                <p>Download our app for Apple or Android</p>
-                <div class="app-logo">
-                  <img src="assets/appicon.svg" alt="" />
-                  <img src="assets/ggicon.svg" alt="" />
-                </div>
-              </div>
-
-              <div class="footer-col2">
-                <img src="assets/logo.png" alt="logo" />
-                <p>Our purpose is sustainability and get you a one of a kind</p>
-              </div>
-              <div class="footer-col3">
-                <h3>Useful links</h3>
-                <ul>
-                  <li>Coupons</li>
-                  <li>Blog Post</li>
-                  <li>Return Policy</li>
-                  <li>Join affiliate</li>
-                </ul>
-              </div>
-              <div class="footer-col4">
-                <h3>Follow us</h3>
-                <ul>
-                  <li>Facebook</li>
-                  <li>Instagram</li>
-                  <li>Twitter</li>
-                  <li>TikTok</li>
-                </ul>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col1">
+              <h3>Download our app</h3>
+              <p>Download our app for Apple or Android</p>
+              <div class="app-logo">
+                <img src="assets/appicon.svg" alt="" />
+                <img src="assets/ggicon.svg" alt="" />
               </div>
             </div>
-            <hr />
-            <p class="copy">Copyright 2023 - Ellen Pelby Bitterhoff</p>
+
+            <div class="footer-col2">
+              <img src="assets/logo.png" alt="logo" />
+              <p>Our purpose is sustainability and get you a one of a kind</p>
+            </div>
+            <div class="footer-col3">
+              <h3>Useful links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>TikTok</li>
+              </ul>
+            </div>
           </div>
+          <hr />
+          <p class="copy">Copyright 2023 - Ellen Pelby Bitterhoff</p>
         </div>
-      </footer>
-    </main>
-    <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
+      </div>
+    </footer>
+
+    <script src="produktliste.js"></script>
   </body>
 </html>

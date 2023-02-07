@@ -167,6 +167,18 @@ ul {
   font-size: 50px;
   margin-top: 20px;
 }
+.soldOut::before {
+  content: "SOLD OUT";
+  position: absolute;
+  background: grey;
+  color: white;
+  padding: 1rem;
+  font-family: "montserrat";
+}
+.soldOut img {
+  opacity: 0.3;
+}
+
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
