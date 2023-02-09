@@ -7,12 +7,15 @@ function menutoggle() {
     MenuItems.style.maxHeight = "0px";
   }
 }
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get("cat");
+const url = `https://kea-alt-del.dk/t7/api/products?limit=30&category=${cat}`;
+
+document.querySelector("h1").textContent = cat;
 
 /*https://kea-alt-del.dk/t7/api/products/*/
 async function hentData() {
-  const response = await fetch(
-    "https://kea-alt-del.dk/t7/api/products?limit=30 "
-  );
+  const response = await fetch(url);
   const data = await response.json();
   console.log(data);
   data.forEach(visProdukt);
